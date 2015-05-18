@@ -1,0 +1,110 @@
+
+/*
+BEM syntax
+http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+http://www.sitepoint.com/bem-smacss-advice-from-developers/
+
+What is BEM?
+
+BEM stands for Block Element Modifier and originated at Yandex. 
+It provides a rather strict way to arrange your CSS classes into independent modules. 
+There are a few variations on the idea but the most common one looks like this:
+
+.block {}
+.block__element {}
+.block--modifier {}
+.block__element--modifier {}
+
+What is SMACSS?
+
+Base is used for defaults like html, body, a, a:hover. 
+This includes your CSS resets and would often be in its own base CSS 
+file or at the start of your main CSS.
+
+Layout divides a page into sections with elements like header, footer, and article. 
+Often developers show layout elements by prefixing the class with l-.
+
+Module/block is a reusable, modular element in the design. The SMACSS documentation sees modules as the majority 
+of your elements and thus doesn’t require that you prefix them but you could do so if you choose.
+
+State is used for the variations possible for each element (e.g. active, inactive, expanded, hidden). 
+These are prefixed with is-, e.g. is-active, is-inactive, is-expanded, is-hidden or are via pseudo-classes 
+such as :hover and :focus or media queries.
+
+*/
+
+
+
+/* RESET + Boostrap
+======================================================================================= */
+@import "bootstrap/bootstrap.less";
+@import "base/reset.less"; /* Custom */
+@import "vendor/animate.less"; 
+
+
+/* Variables
+======================================================================================= */
+@import "base/variables.less"; /* Custom */
+
+
+/* SPRITES
+======================================================================================= */
+@import "sprites/sprites.less";
+@import "sprites/sprites@2x.less";
+@import "sprites/mixins-sprites.less";
+
+
+/* Boostrap Custom
+======================================================================================= */
+@import "bootstrap-custom/btn.less";
+@import "bootstrap-custom/progress.less";
+@import "bootstrap-custom/label.less";
+@import "bootstrap-custom/navbar.less";
+
+
+
+/* BLOCKS
+======================================================================================= */
+//@import "blocks/wyswyg.less";
+//@import "blocks/post.less";
+
+@import "blocks/b-section";
+@import "blocks/b-headline";
+//@import "blocks/b-message";
+
+@import "blocks/b-welcome";
+@import "blocks/b-media.less";
+@import "blocks/b-works.less";
+
+@import "blocks/b-contact.less";
+@import "blocks/b-social.less";
+
+@import "blocks/b-progress.less";
+//@import "blocks/b-progress-bar.less";
+
+
+/* LAYOUT
+====================================================================================== */
+@import "layout/header.less";
+@import "layout/main.less";
+@import "layout/sidebar.less";
+@import "layout/footer.less";
+
+
+/* PAGE
+======================================================================================= */
+
+
+/* VENDOR
+======================================================================================= */
+
+
+/* RESPONSIVE 
+======================================================================================= */
+
+
+
+
+
+
+

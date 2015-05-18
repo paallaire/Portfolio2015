@@ -1,0 +1,160 @@
+
+/*------------------------------------*\
+    $FORM ELEMENTS
+\*------------------------------------*/
+
+/**
+ * $FORM
+ * $CONTROL GROUP
+ * $INPUT TEXT,
+ * $TEXTAREA
+ * $INPUT RADIO & CHECKBOX
+ */
+
+
+
+/* $FORM
+========================================================================== */
+.form {
+  margin:0;
+  padding:0;
+}
+
+
+/* $FORM--HORIZONTAL
+========================================================================== */
+.form--horizontal {
+    
+	label {
+    text-align:right;
+  }
+
+}
+
+
+/* $FORM--INLINE
+========================================================================== */
+.form--inline {
+    
+  .form-group {
+    display: inline-block;
+    margin-bottom:5px;
+    vertical-align:middle;
+  }    
+    
+
+}
+
+
+/* $CONTROL GROUP
+========================================================================== */
+.form-group {
+   margin-bottom:@margin-base;
+  .clearfix();
+}
+
+
+/* $LABEL
+========================================================================== */
+label {
+  padding-top:5px;
+}
+
+/* $INPUT TEXT
+========================================================================== */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.btn-submit,
+input[type="submit"] {
+  padding:6px 6px;
+  width:100%;
+  height:auto;
+  display:block;
+  .box-sizing(border-box);    
+      
+  background-color:@input-bg;
+  background-image:none;
+  border:1px solid @input-border;
+  border-radius:@input-border-radius;
+  box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color:@input-color;
+  .placeholder(@input-color-placeholder);
+  
+  font-size:14px;
+  line-height:1.4;
+  vertical-align:middle;
+  transition:border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  
+  &:focus {
+  	border-color:@input-color-focus;
+  }
+   
+}
+
+.btn-submit,
+input[type="submit"] {
+  width:auto;
+  height:34px;
+  display:inline-block;
+  
+  color:@btn-color-default;
+  background-color:@btn-bgcolor-default;
+  border:none;
+  
+  .transition(~"background-color 0.5s ease,color 0.5s ease");
+  
+  &:hover,
+  &:active {
+    color:@btn-color-hover;
+    background-color:@btn-bgcolor-hover;
+  }  
+  
+
+}
+
+
+/* $TEXTAREA
+========================================================================== */
+textarea {
+	height:auto;
+}
+
+
+/* $INPUT RADIO & CHECKBOX
+========================================================================== */
+.radio, .checkbox {
+  padding-left:20px;
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-left:-20px;
+  }
+    
+}
+
+/* inline */
+.radio-inline,
+.checkbox-inline {
+    
+}
+
+
+
+
+
+
+

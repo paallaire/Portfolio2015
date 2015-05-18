@@ -1,0 +1,52 @@
+
+/*------------------------------------*\
+    $BUTTON ELEMENTS (BOOSTRAP)
+\*------------------------------------*/
+
+/**
+ * $btn-cta
+ */
+ 
+
+/* $BUTTON WITH A OR BUTTON TAG
+========================================================================== */
+
+.btn-cta {
+  margin-bottom:5px;
+  padding:15px 20px;
+
+  
+  color:@btn-color-default;
+  background-color:@btn-bgcolor-default;
+  border-radius:6px;
+  border:none;
+  
+  font-weight:normal;
+  line-height:1;
+  text-align:center;
+  text-decoration:none;
+  
+  .transition(~"background-color 0.5s ease,color 0.5s ease");
+
+  /* State
+  ===================================== */     
+    
+  &:hover,
+  &:active {
+    color:@btn-color-hover;
+		background:darken(@btn-bgcolor-default, 100%);
+  }
+  
+
+  /* Class
+  ===================================== */     
+  
+  /* full width */
+  &.full {
+    width:100%;
+  	display:block;
+  }
+  
+}
+
+

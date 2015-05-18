@@ -1,0 +1,76 @@
+
+/*------------------------------------*\
+    $navbar ELEMENTS (BOOSTRAP)
+\*------------------------------------*/
+
+/**
+ * $navbar
+ * $navbar-bar 
+ */
+ 
+
+/* $navbar-default
+========================================================================== */
+
+.navbar-default {
+  margin:0;
+  padding:0;
+  
+	background-color:transparent;
+	border:none;
+  
+  .navbar-nav {
+  
+  	li > a {
+      color:#fff;    
+    }
+    
+  	li > a:hover {
+      color:#e74c3c;    
+    }   
+    
+  	li > a:focus {
+      outline:none;
+      color:#fff;
+    }     
+    .active > a {
+      background-color:#e74c3c;
+      color:#fff;
+    }
+  
+  }
+  
+}
+
+.navbar-default.navbar-fixed-top {}
+
+
+.navbar-collapse {
+  border:none;
+  box-shadow:none;
+  /*
+transform: translate3d(0,0,0);
+-webkit-transform: translate3d(0,0,0);  
+  */
+  
+}
+
+/* Small devices (tablets, 768px and down)
+========================================================================== */
+
+@media (max-width: @screen-sm-min) {
+
+  .navbar-default {
+
+    .navbar-nav {
+      margin:15px 0 0 0;
+    }
+    
+  }
+
+}
+
+
+
+
+

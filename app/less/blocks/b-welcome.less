@@ -1,0 +1,67 @@
+
+/*------------------------------------*\
+    $b-welcome ELEMENTS
+\*------------------------------------*/
+
+
+/* $b-welcome
+========================================================================== */
+
+.b-welcome {
+	/*
+  background:#2d3e50 url(../../dist/img/latest-features.jpg) center center no-repeat;
+  background-size:cover;
+  */
+  background-color:#2d3e50;
+	color:@white;
+  border-bottom:15px solid #e74c3c;
+	
+	.b-welcome__content {
+		padding:200px 30px 150px 30px;
+	}
+	
+	.b-welcome__title {
+		margin-bottom:5px;
+		
+		font-size:46px;
+    line-height:50px;
+		letter-spacing:-1px;
+		font-weight:bold;
+		text-align:center;
+		text-transform:uppercase;
+	}
+	
+	.b-welcome__message {
+		font-size:24px;
+		text-align:center;
+	}	
+	
+}
+
+
+/* $b-welcome
+   Small devices (tablets, 768px and down)
+========================================================================== */
+@media (max-width: @screen-sm-min) {
+
+  .b-welcome {
+    
+    .b-welcome__content {
+      padding:100px 15px 50px 15px;
+      
+     .animation-name(fadeIn);
+    }
+    
+    .b-welcome__title {
+      font-size:40px;
+      line-height:44px;
+    }
+    
+    .b-welcome__message {
+      font-size:20px;
+    }	
+    
+  }
+
+}
+

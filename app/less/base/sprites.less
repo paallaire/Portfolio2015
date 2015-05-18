@@ -1,0 +1,169 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@arrow-down-name: arrow-down;
+@arrow-down-x: 36px;
+@arrow-down-y: 72px;
+@arrow-down-offset-x: -36px;
+@arrow-down-offset-y: -72px;
+@arrow-down-width: 9px;
+@arrow-down-height: 8px;
+@arrow-down-total-width: 212px;
+@arrow-down-total-height: 96px;
+@arrow-down-image: 'dist/img/spritesheet.png';
+@arrow-down: 36px 72px -36px -72px 9px 8px 212px 96px 'dist/img/spritesheet.png' arrow-down;
+@arrow-menu-name: arrow-menu;
+@arrow-menu-x: 60px;
+@arrow-menu-y: 72px;
+@arrow-menu-offset-x: -60px;
+@arrow-menu-offset-y: -72px;
+@arrow-menu-width: 4px;
+@arrow-menu-height: 4px;
+@arrow-menu-total-width: 212px;
+@arrow-menu-total-height: 96px;
+@arrow-menu-image: 'dist/img/spritesheet.png';
+@arrow-menu: 60px 72px -60px -72px 4px 4px 212px 96px 'dist/img/spritesheet.png' arrow-menu;
+@list-li-big-name: list-li-big;
+@list-li-big-x: 46px;
+@list-li-big-y: 72px;
+@list-li-big-offset-x: -46px;
+@list-li-big-offset-y: -72px;
+@list-li-big-width: 7px;
+@list-li-big-height: 7px;
+@list-li-big-total-width: 212px;
+@list-li-big-total-height: 96px;
+@list-li-big-image: 'dist/img/spritesheet.png';
+@list-li-big: 46px 72px -46px -72px 7px 7px 212px 96px 'dist/img/spritesheet.png' list-li-big;
+@list-li-name: list-li;
+@list-li-x: 54px;
+@list-li-y: 72px;
+@list-li-offset-x: -54px;
+@list-li-offset-y: -72px;
+@list-li-width: 5px;
+@list-li-height: 5px;
+@list-li-total-width: 212px;
+@list-li-total-height: 96px;
+@list-li-image: 'dist/img/spritesheet.png';
+@list-li: 54px 72px -54px -72px 5px 5px 212px 96px 'dist/img/spritesheet.png' list-li;
+@lock-name: lock;
+@lock-x: 25px;
+@lock-y: 72px;
+@lock-offset-x: -25px;
+@lock-offset-y: -72px;
+@lock-width: 10px;
+@lock-height: 12px;
+@lock-total-width: 212px;
+@lock-total-height: 96px;
+@lock-image: 'dist/img/spritesheet.png';
+@lock: 25px 72px -25px -72px 10px 12px 212px 96px 'dist/img/spritesheet.png' lock;
+@page-top-name: page-top;
+@page-top-x: 0px;
+@page-top-y: 72px;
+@page-top-offset-x: 0px;
+@page-top-offset-y: -72px;
+@page-top-width: 24px;
+@page-top-height: 24px;
+@page-top-total-width: 212px;
+@page-top-total-height: 96px;
+@page-top-image: 'dist/img/spritesheet.png';
+@page-top: 0px 72px 0px -72px 24px 24px 212px 96px 'dist/img/spritesheet.png' page-top;
+@sticker-en-name: sticker-en;
+@sticker-en-x: 0px;
+@sticker-en-y: 0px;
+@sticker-en-offset-x: 0px;
+@sticker-en-offset-y: 0px;
+@sticker-en-width: 70px;
+@sticker-en-height: 71px;
+@sticker-en-total-width: 212px;
+@sticker-en-total-height: 96px;
+@sticker-en-image: 'dist/img/spritesheet.png';
+@sticker-en: 0px 0px 0px 0px 70px 71px 212px 96px 'dist/img/spritesheet.png' sticker-en;
+@sticker-es-name: sticker-es;
+@sticker-es-x: 71px;
+@sticker-es-y: 0px;
+@sticker-es-offset-x: -71px;
+@sticker-es-offset-y: 0px;
+@sticker-es-width: 70px;
+@sticker-es-height: 71px;
+@sticker-es-total-width: 212px;
+@sticker-es-total-height: 96px;
+@sticker-es-image: 'dist/img/spritesheet.png';
+@sticker-es: 71px 0px -71px 0px 70px 71px 212px 96px 'dist/img/spritesheet.png' sticker-es;
+@sticker-fr-name: sticker-fr;
+@sticker-fr-x: 142px;
+@sticker-fr-y: 0px;
+@sticker-fr-offset-x: -142px;
+@sticker-fr-offset-y: 0px;
+@sticker-fr-width: 70px;
+@sticker-fr-height: 71px;
+@sticker-fr-total-width: 212px;
+@sticker-fr-total-height: 96px;
+@sticker-fr-image: 'dist/img/spritesheet.png';
+@sticker-fr: 142px 0px -142px 0px 70px 71px 212px 96px 'dist/img/spritesheet.png' sticker-fr;
+@spritesheet-width: 212px;
+@spritesheet-height: 96px;
+@spritesheet-image: 'dist/img/spritesheet.png';
+@spritesheet-sprites: @arrow-down @arrow-menu @list-li-big @list-li @lock @page-top @sticker-en @sticker-es @sticker-fr;
+@spritesheet: 212px 96px 'dist/img/spritesheet.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: extract(@sprite, 10);
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
