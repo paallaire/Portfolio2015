@@ -7593,6 +7593,9 @@ The provided classes are intended to be used with the array-like variables
 }
 .navbar-default .navbar-nav li > a {
   color: #fff;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 .navbar-default .navbar-nav li > a:hover {
   color: #e74c3c;
@@ -7623,51 +7626,51 @@ transform: translate3d(0,0,0);
 /* BLOCKS
 ======================================================================================= */
 /*------------------------------------*\
-    $b-section ELEMENTS
+    $l-section ELEMENTS
 \*------------------------------------*/
 /**
- * $b-section
+ * $l-section
  */
-/* $b-section
+/* $l-section
 ========================================================================== */
-.b-section {
+.l-section {
   margin-bottom: 0px;
   padding-top: 120px;
 }
-/* $b-section--no-padding-top ( Modifier )
+/* $l-section--no-padding-top ( Modifier )
 ================================================= */
-.b-section--no-padding-top {
+.l-section--no-padding-top {
   padding-top: 0px;
 }
-/* $b-section--large-padding ( Modifier )
+/* $l-section--large-padding ( Modifier )
 ================================================= */
-.b-section.b-section--large {
+.l-section.l-section--large {
   padding: 50px 0;
 }
-/* $b-section--no-margin-bottom ( Modifier )
+/* $l-section--no-margin-bottom ( Modifier )
 ================================================= */
-.b-section.b-section--no-margin-bottom {
+.l-section.l-section--no-margin-bottom {
   margin-bottom: 0px;
 }
-/* $b-section--margin-bottom ( Modifier )
+/* $l-section--margin-bottom ( Modifier )
 ================================================= */
-.b-section.b-section--margin-bottom {
+.l-section.l-section--margin-bottom {
   margin-bottom: 120px;
 }
-/* $b-section.b-section--light ( Modifier )
+/* $l-section.l-section--light ( Modifier )
 ================================================= */
-.b-section.b-section--light {
+.l-section.l-section--light {
   background-color: #ecf0f1;
 }
-/* $.b-section.b-section--dark ( Modifier )
+/* $.l-section.l-section--dark ( Modifier )
 ================================================= */
-.b-section.b-section--dark {
+.l-section.l-section--dark {
   background-color: #34495e;
   color: #ffffff;
 }
-/* $.b-section.b-section--message ( Modifier )
+/* $.l-section.l-section--message ( Modifier )
 ================================================= */
-.b-section.b-section--message {
+.l-section.l-section--message {
   background-color: #e74c3c;
 }
 /*------------------------------------*\
@@ -7790,6 +7793,9 @@ transform: translate3d(0,0,0);
   left: 0;
   color: #ed4e6e;
   opacity: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .b-media .b-media__caption i {
   padding: 5px 10px;
@@ -7969,6 +7975,9 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
 }
 .b-social .b-social__list_item a {
   color: #34495e;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 .b-social .b-social__list_item a:hover {
   opacity: 0.8;
@@ -8073,6 +8082,13 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
 }
 #l-header #site-logo {
   margin: 0;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+#l-header #site-logo:hover {
+  opacity: 0.9;
 }
 #l-header.top {
   top: 20px;
@@ -8106,14 +8122,30 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
   /* #header END */
 }
 /*------------------------------------*\
-    $MAIN
+    $browsehappy
 \*------------------------------------*/
 /**
- * $MAIN
+ * $browsehappy
  */
-/* $MAIN
+/* $browsehappy
 ========================================================================== */
-/* #main END */
+#l-browsehappy {
+  background-color: #f7ca18;
+  color: #000;
+}
+#l-browsehappy .browsehappy {
+  padding: 15px 0;
+  text-align: center;
+}
+#l-browsehappy .fa {
+  margin-right: 2px;
+}
+#l-browsehappy .text {
+  font-size: 14px;
+  line-height: 2em;
+  vertical-align: top;
+}
+/* #browsehappy END */
 /*------------------------------------*\
     $SIDEBAR
 \*------------------------------------*/

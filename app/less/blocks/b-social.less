@@ -25,8 +25,14 @@
     
     &:last-child { margin-right:0; }
     
-    a { color:@color-bg-dark; }
-    a:hover { opacity:0.8; }
+    a { 
+    	color:@color-bg-dark; 
+      .transition(all 0.2s ease 0s);   
+    }
+    
+    a:hover { 
+    	opacity:0.8; 
+    }
   
   }  
 	

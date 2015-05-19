@@ -80,9 +80,6 @@
 </head>
 <body id="top">
 
-	<!--[if lt IE 10]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
 		
 	<!-- header
 	==============================================================-->
@@ -100,7 +97,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					
-					<h1 id="site-logo"><a href="/"><img class="svg" src="/images/logo.svg" width="50" height="50" alt="Pascal-André Allaire" title="Pascal-André Allaire"></a></h1>
+					<h1 id="site-logo"><a href="/"><img class="svg" src="/images/logo.svg" width="50" height="50" alt="Pascal-André Allaire - Développeur Front-End" title="Pascal-André Allaire - Développeur Front-Ende"></a></h1>
 		
 				</div>
 				
@@ -120,7 +117,6 @@
   </header>
 	
 
-  
 
 
 
@@ -138,9 +134,18 @@
     </div>
   
   </section>	
+	
+	<!--[if lt IE 10]>
+	<section id="l-browsehappy">
+		<div class="container">
+			<p class="browsehappy"><i class="fa fa-exclamation fa-2x"></i> <span class="text">Vous utilisez un navigateur <strong>désuet</strong>. S'il vous plaît <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> pour une meilleure votre expérience.</span></p>
+		</div>  	
+	</section>	
+	<![endif]-->
+	
   <!-- b-skills
 	==============================================================-->
-  <section id="skills" class="container b-section">
+  <section id="skills" class="container l-section">
   
   	<div class="b-headline">
       <h2 class="b-headline__title">Compétences</h2>
@@ -496,7 +501,7 @@
 	
   <!-- b-services
 	==============================================================-->
-  <section id="services" class="container b-section">
+  <section id="services" class="container l-section">
   
   	<div class="b-headline">
       <h2 class="b-headline__title">Services offerts</h2>
@@ -554,7 +559,7 @@
 
   <!-- work
 	==============================================================-->
-  <section id="work" class="container b-section">
+  <section id="work" class="container l-section">
   
   	<div class="b-headline">
       <h2 class="b-headline__title">Réalisations</h2>
@@ -605,7 +610,7 @@
 
 	<!-- works
 	==============================================================-->
-  <section id="works" class="container b-section b-section--margin-bottom">    
+  <section id="works" class="container l-section l-section--margin-bottom">    
      
   	<div class="b-headline">
       <h3 class="b-headline__title">Aussi...</h3>
@@ -670,7 +675,7 @@
 				
       </li>
             
-    	<li id="work04" class="col-md-4 col-sm-6 b-media__item wow fadeIn" data-wow-delay="0.75s">
+    	<li id="work04" class="col-md-4 col-sm-6 b-media__item wow fadeIn" data-wow-delay="0s">
 				
 				<figure class="b-media__figure">
 					 <img class="b-media__image" src="/images/projets/educalcool.jpg" alt="Éduc’alcool" title="Éduc’alcool" data-no-retina />
@@ -690,12 +695,13 @@
 								
       </li>
       
-    	<li id="work05" class="col-md-4 col-sm-6 b-media__item wow fadeIn" data-wow-delay="1s">
+    	<li id="work05" class="col-md-4 col-sm-6 b-media__item wow fadeIn" data-wow-delay="0.25s">
 				
 				<figure class="b-media__figure">
 					 <img class="b-media__image" src="/images/projets/palais-des-congres-de-montreal.jpg" alt="Palais des congrès de Montréal" title="Palais des congrès de Montréal" data-no-retina />
 					<figcaption class="b-media__caption">
-						<a href="http://dribbble.com/shots/1115632-Camera" target="_blank"><i class="fa fa-search fa-4x"></i></a>					</figcaption>
+						<a href="http://dribbble.com/shots/1115632-Camera" target="_blank"><i class="fa fa-search fa-4x"></i></a>					
+					</figcaption>
 				</figure>	
 							
         <h3 class="b-media__title">Palais des congrès de Montréal</h3>
@@ -710,12 +716,13 @@
 				
       </li>
       
-    	<li id="work06" class="col-md-4 col-sm-6 b-media__item wow fadeIn" data-wow-delay="1.25s">
+    	<li id="work06" class="col-md-4 col-sm-6 b-media__item wow fadeIn" data-wow-delay="0.5s">
 				
 				<figure class="b-media__figure">
 					 <img class="b-media__image" src="/images/projets/lccjti.ca.jpg" alt="Lccjti.ca" title="Lccjti.ca" data-no-retina />
 					<figcaption class="b-media__caption">
-						<a href="http://dribbble.com/shots/1115632-Camera" target="_blank"><i class="fa fa-search fa-4x"></i></a>					</figcaption>
+						<a href="http://dribbble.com/shots/1115632-Camera" target="_blank"><i class="fa fa-search fa-4x"></i></a>					
+					</figcaption>
 				</figure>	
 							
         <h3 class="b-media__title">Lccjti.ca</h3>
@@ -737,7 +744,7 @@
 	
   <!-- b-contact
 	==============================================================-->
-  <section id="contact" class="b-section b-section--no-margin-bottom b-section--large b-section--dark">
+  <section id="contact" class="l-section l-section--no-margin-bottom l-section--large l-section--dark">
       
 		<div class="container">
 			<div class="row">
@@ -755,7 +762,7 @@
       
   </section>
   
-  <footer id="l-footer" class="b-section b-section--no-margin-bottom content-info" role="contentinfo">
+  <footer id="l-footer" class="l-section l-section--no-margin-bottom content-info" role="contentinfo">
     <div class="container">
     	
 			<div class="b-social pull-right">
