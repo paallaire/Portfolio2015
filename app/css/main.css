@@ -1544,24 +1544,28 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container {
+.container,
+.l-container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .container {
+  .container,
+  .l-container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container,
+  .l-container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container,
+  .l-container {
     width: 1170px;
   }
 }
@@ -4288,7 +4292,9 @@ a.label:focus {
 .navbar-header:before,
 .navbar-header:after,
 .navbar-collapse:before,
-.navbar-collapse:after {
+.navbar-collapse:after,
+.l-container:before,
+.l-container:after {
   content: " ";
   display: table;
 }
@@ -4301,7 +4307,8 @@ a.label:focus {
 .nav:after,
 .navbar:after,
 .navbar-header:after,
-.navbar-collapse:after {
+.navbar-collapse:after,
+.l-container:after {
   clear: both;
 }
 .center-block {
@@ -4584,44 +4591,6 @@ p:last-child,
 li:last-child {
   margin-bottom: 0;
 }
-/*
-.fadeInDown {
-   opacity:0;  
-   
-  .animation(fadeInDown linear 1s); 
-  .animation-fill-mode(forwards);
-  .animation-duration(1s)
-}
-
-
-.fadeIn(@delay) {
-   opacity:0;  
-   
-  .animation(fadeIn linear 1s); 
-  .animation-fill-mode(forwards);
-  .animation-duration(1s);
-  .animation-delay(@delay);
-}
-
-
-#service01 { .fadeIn(0s) };
-#service02 { .fadeIn(0.5s) };
-#service03 { .fadeIn(1s) };
-
-#work01 { .fadeIn(0s) };
-#work02 { .fadeIn(0.5s) };
-#work03 { .fadeIn(1s) };
-
-*/
-/*
-.b-headline {
-   opacity:0;  
-   
-  .animation(fadeInDown linear 0.5s); 
-  .animation-fill-mode(forwards);
-  .animation-duration(0.5s)
-}
-*/
 /* Custom */
 /*!
 Animate.css - http://daneden.me/animate
@@ -7626,54 +7595,6 @@ transform: translate3d(0,0,0);
 /* BLOCKS
 ======================================================================================= */
 /*------------------------------------*\
-    $l-section ELEMENTS
-\*------------------------------------*/
-/**
- * $l-section
- */
-/* $l-section
-========================================================================== */
-.l-section {
-  margin-bottom: 0px;
-  padding-top: 120px;
-}
-/* $l-section--no-padding-top ( Modifier )
-================================================= */
-.l-section--no-padding-top {
-  padding-top: 0px;
-}
-/* $l-section--large-padding ( Modifier )
-================================================= */
-.l-section.l-section--large {
-  padding: 50px 0;
-}
-/* $l-section--no-margin-bottom ( Modifier )
-================================================= */
-.l-section.l-section--no-margin-bottom {
-  margin-bottom: 0px;
-}
-/* $l-section--margin-bottom ( Modifier )
-================================================= */
-.l-section.l-section--margin-bottom {
-  margin-bottom: 120px;
-}
-/* $l-section.l-section--light ( Modifier )
-================================================= */
-.l-section.l-section--light {
-  background-color: #ecf0f1;
-}
-/* $.l-section.l-section--dark ( Modifier )
-================================================= */
-.l-section.l-section--dark {
-  background-color: #34495e;
-  color: #ffffff;
-}
-/* $.l-section.l-section--message ( Modifier )
-================================================= */
-.l-section.l-section--message {
-  background-color: #e74c3c;
-}
-/*------------------------------------*\
     $b-section ELEMENTS
 \*------------------------------------*/
 /* $b-headline
@@ -7828,7 +7749,7 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
      top:15px;
      left:15px;
      transform:translate(0,0);
-    }   
+    }
     */
   }
   .b-media .b-media__text {
@@ -7894,7 +7815,7 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
   margin-bottom: 0;
   display: block;
 }
-/* Medium devices (desktops, 992px and down) 
+/* Medium devices (desktops, 992px and down)
 ================================================= */
 @media (max-width: 992px) {
   .b-media.b-media--last-works {
@@ -8064,12 +7985,8 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
 /* LAYOUT
 ====================================================================================== */
 /*------------------------------------*\
-    $HEADER
+    $HEADER ELEMENTS (layout)
 \*------------------------------------*/
-/**
- * $HEADER
-
- */
 /* $HEADER
 ========================================================================== */
 #l-header {
@@ -8090,10 +8007,10 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
 #l-header #site-logo:hover {
   opacity: 0.9;
 }
-#l-header.top {
+#l-header.is-top {
   top: 20px;
 }
-#l-header.bg {
+#l-header.is-bg {
   background-color: rgba(45, 62, 80, 0.9);
 }
 #l-header.is-transition {
@@ -8122,11 +8039,8 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
   /* #header END */
 }
 /*------------------------------------*\
-    $browsehappy
+    $browsehappy ELEMENTS (layout)
 \*------------------------------------*/
-/**
- * $browsehappy
- */
 /* $browsehappy
 ========================================================================== */
 #l-browsehappy {
@@ -8147,22 +8061,15 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
 }
 /* #browsehappy END */
 /*------------------------------------*\
-    $SIDEBAR
+    $SIDEBAR ELEMENTS (layout)
 \*------------------------------------*/
-/**
- * $SIDEBAR
- */
 /* $SIDEBAR
 ========================================================================== */
 /* #sidebar END */
 /*------------------------------------*\
-    $FOOTER
+    $footer ELEMENTS (layout)
 \*------------------------------------*/
-/**
- * $FOOTER
-
- */
-/* $FOOTER
+/* $footer
 ========================================================================== */
 #l-footer {
   padding: 25px 0;
@@ -8171,6 +8078,8 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
   line-height: 28px;
 }
 /* #footer END */
+/* Small devices (tablets, 768px and down)
+================================================= */
 @media (max-width: 768px) {
   #copyright {
     float: none!important;
@@ -8181,10 +8090,51 @@ html.no-touch .b-media .b-media__figure:hover a .b-media__caption a {
     display: block;
   }
 }
+/*------------------------------------*\
+    $l-container
+\*------------------------------------*/
+/* $l-container
+========================================================================== */
+/*------------------------------------*\
+    $l-section ELEMENTS (layout)
+\*------------------------------------*/
+/* $l-section
+========================================================================== */
+.l-section {
+  margin-bottom: 0px;
+  padding-top: 120px;
+}
+/* $l-section--no-padding-top ( Modifier )
+================================================= */
+.l-section.l-section--no-padding-top {
+  padding-top: 0px;
+}
+/* $l-section--large-padding ( Modifier )
+================================================= */
+.l-section.l-section--large {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* $l-section--margin-bottom ( Modifier )
+================================================= */
+.l-section.l-section--margin-bottom {
+  margin-bottom: 120px;
+}
+/* $l-section.l-section--light ( Modifier )
+================================================= */
+.l-section.l-section--light {
+  background-color: #ecf0f1;
+}
+/* $.l-section.l-section--dark ( Modifier )
+================================================= */
+.l-section.l-section--dark {
+  background-color: #34495e;
+  color: #ffffff;
+}
 /* PAGE
 ======================================================================================= */
 /* VENDOR
 ======================================================================================= */
-/* RESPONSIVE 
+/* RESPONSIVE
 ======================================================================================= */
 /*# sourceMappingURL=/css/main.css.map */
