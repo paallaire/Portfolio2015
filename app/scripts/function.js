@@ -5,9 +5,9 @@
 
 	function updateNav() {
 
-		var mode            = appSite.getDevice();
+		var mode           = appSite.getDevice();
 		var $wrapperNavbar = $('#l-header');
-		var $window         = $(window);
+		var $window        = $(window);
 
 		if( mode === 'desktop' ) {
 

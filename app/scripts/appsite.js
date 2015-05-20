@@ -24,12 +24,13 @@
 			lang                 : 'fr'
 		};
 
+
 		/* Private proprety
 		*=================================================*/
 
 		// CSS selector
-		var $window         = $(window);
-		var $bodycd            = $('body');
+		var $window     = $(window);
+		var $bodycd     = $('body');
 
 		// proprety
 		var width       = 0;
@@ -67,7 +68,6 @@
 
 		/* getOrientation */
 		var getOrientation = function() { return orientation; };
-
 
 
 		/* updateDevice
@@ -111,7 +111,7 @@
 
 				log(" ===== settings of appSite ==== ", 'start');
 				log("defaults " + JSON.stringify(defaults), 'info' );
-				log("options "  + JSON.stringify(options), 'info' );
+				log("options " + JSON.stringify(options), 'info' );
 				log("settings " + JSON.stringify(settings), 'info' );
 				log(" ===== settings of appSite ==== ", 'end');
 
@@ -133,10 +133,10 @@
 			if( settings.debug === true ) {
 
 				log(" ===== Info init of appSite ==== ", 'start');
-				log(" w " + 	getWidth() , 'info');
-				log(" h " +  getHeight() , 'info');
-				log(" viewport " + 	getDevice() , 'info');
-				log(" orientation " + 	getOrientation() , 'info');
+				log(" w " + getWidth(), 'info');
+				log(" h " + getHeight(), 'info');
+				log(" viewport " + getDevice(), 'info');
+				log(" orientation " + getOrientation(), 'info');
 				log(" ===== END ==== ", 'end');
 
 			}
@@ -155,7 +155,6 @@
 			getHeight      : getHeight,
 			getDevice      : getDevice,
 			getOrientation : getOrientation,
-
 		};
 
 		return oPublic;

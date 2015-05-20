@@ -7,82 +7,95 @@
 /* $b-progress 
 ========================================================================== */
 
-.b-progress {
+.b-progress
+{
+    .b-progress__title
+    {
+        font-weight: bold;
 
-  .b-progress__title {
-    margin-bottom:20px;
-    
-    font-weight:bold;
-  }  
-  
-  .b-progress__container {
-    margin-bottom:5px;
-  }
-  
-  .b-progress__cat {
-    margin:0 0 5px 0;
-    .clearfix();
-    
-    color:#000;
-    
-    font-size:15px;
-		line-height:1;
-    text-transform:uppercase;
-    font-weight:bold;
-  }
+        margin-bottom: 20px;
+    }
 
-    
+    .b-progress__container
+    {
+        margin-bottom: 5px;
+    }
+
+    .b-progress__cat
+    {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1;
+
+        margin: 0 0 5px 0;
+
+        text-transform: uppercase;
+
+        color: #000;
+
+        .clearfix();
+    }
 }
 
 
 /* Small devices (tablets, 768px and down)
 ========================================================================== */
 
-@media (max-width: @screen-md-min) {
+@media (max-width: @screen-md-min)
+{
+    .b-progress
+    {
+        min-height: 260px;
 
-  .b-progress {
-		min-height:260px;
-  
-		.b-progress__title {
-			font-size:22px;
-		}  
-  	
-    .b-progress__no-title {
-      padding-top:0px;
+        .b-progress__title
+        {
+            font-size: 22px;
+        }
+
+        .b-progress__no-title
+        {
+            padding-top: 0;
+        }
+
+        .b-progress__cat
+        {
+            font-size: 12px;
+        }
+
+        .progress
+        {
+            height: 10px;
+        }
     }
-		
-		.b-progress__cat {
-			font-size:12px;
-		}		
-    
-    .progress { height:10px; }
-		
-  }
-	
-	.misc-part-2 {
-		min-height:0;
-		float:right;
-		
-		.b-progress  { min-height:0; }
-	}	
 
+    .misc-part-2
+    {
+        float: right;
+
+        min-height: 0;
+
+        .b-progress
+        {
+            min-height: 0;
+        }
+    }
 }
 
 
 /* Small devices (tablets, 768px and up)
 ========================================================================== */
 
-@media (min-width: @screen-md-min) {
+@media (min-width: @screen-md-min)
+{
+    .b-progress
+    {
+        min-height: 334px;
 
-  .b-progress {
-  	min-height:334px;
-    
-    .b-progress__no-title {
-      padding-top:66px;
-    }    
-    
-  }
-
+        .b-progress__no-title
+        {
+            padding-top: 66px;
+        }
+    }
 }
 
 
